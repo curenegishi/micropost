@@ -3,7 +3,7 @@
 @section('content')
 <div class="row">
         <aside class="col-sm-4">
-            pinclude('users.card',['user'=> $user])
+            @include('users.card',['user'=> $user])
         </aside>
         <div class="col-sm-8">
             @include('users.navtabs',['user'=> $user])
